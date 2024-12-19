@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIRA Clone</title>
+    <link rel="stylesheet" href="style.css" class="style">
+    <script src="script.js" defer></script>
+
+    
+</head>
+<body>
+   <button id="addNew">CREATE TASK</button>
+
+<main id="container">
+
+    <section id="TODO" class="todo">
+        <h2>TODO</h2>
+    </section>
+       
+    <section id="IN-PROGRESS" class="in-progress">
+        <h2>IN PROGRESS</h2>
+    </section>
+
+    <section id="DONE" class="done">
+        <h2>DONE</h2>
+    </section>
+</main>
+<div class="model hide-model">
+    <span class="modelToggle">create</span>
+    <form class="create">
+        <input type="text" placeholder="Task Title" name="title" required>
+        <textarea type="text" placeholder="description of the Task" cols="30" rows="3" name="description" required></textarea>
+        <input type="number" placeholder="no of days" name="days" required>
+        <input type="text" placeholder="name of the employee" name="name" required>
+        
+        <select name="status" required>
+            <option value="TODO" >TODO</option>
+            <option value="IN-PROGRESS">IN PROGRESS</option>
+            <option value="DONE">DONE</option>
+        </select>
+        
+        <button id="formSubmit">CREATE</button>
+    </form>
+</div>
+</body>
+</html>
