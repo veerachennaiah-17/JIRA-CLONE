@@ -54,9 +54,7 @@ function addCardOnDrop(event){
     event.currentTarget.appendChild(draggableElement);
 }
 while(section[i]!=null){
-    section[i].addEventListener("dragenter",()=>{
-        console.log("drag enter event is triggered");
-    })
+   
     section[i].addEventListener("dragover",addCard);
     section[i].addEventListener("drop",addCardOnDrop);
     i++;
